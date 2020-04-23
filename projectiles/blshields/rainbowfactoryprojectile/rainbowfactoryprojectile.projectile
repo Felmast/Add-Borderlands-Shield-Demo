@@ -1,0 +1,31 @@
+{
+  "projectileName" : "rainbowfactoryprojectile",
+  "image" : "rainbowfactoryprojectile.png",
+  "physics" : "stickybomb",
+  "animationCycle" : 1,
+  "power" : 10,
+  "inheritDamageFactor" : 1,
+  "frameNumber" : 4,
+  "windupFrames" : 4,
+  //"winddownFrames" : 0,
+  "piercing" : true,
+  "timeToLive" : 7,
+  "bounces" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/blshields/explotions/visualexplotion.config"
+    }
+  ],
+
+  "lightColor" : [255, 180, 0],
+  "damageType" : "damage",
+  "damageKind" : "default",
+  "scripts" : [ "/scripts/projectiles/blshield/rainbowturret.lua" ],
+  "scriptDelta" : 1,
+  "flippable" : true,
+  "acceleration" : 1,
+  "rotationRate" : 360.0,
+  "trackingLimit" : 360.0,
+  "range" : 20
+}

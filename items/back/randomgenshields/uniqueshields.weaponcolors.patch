@@ -1,0 +1,9 @@
+[
+	{   //I'm using replace because the "Rainbow Factory" is already in the base mod, but you should use "add"
+		"op" : "replace",
+		"path" : "/rainbowfactory",
+		"value" : {
+			"808080" : "0fa4cf", "606060" : "c950bc", "404040" : "283246", "a3a3a3" : "eb5f0b", "929292" : "deeb0b", "a0a0a0" : "24d249", "8f8e8e" : "0f2fcf"
+		}
+	}
+]

@@ -1,0 +1,10 @@
+{
+  "name" : "rainbowfactorytype", //Identifier
+  "effectConfig" : {
+    "uniqueIndex" : "rainbowfactory" //Name in "uniques.config"
+  },
+  "defaultDuration" : 10,
+  "scripts" : [
+    "uniqueshield.lua"
+  ]
+}

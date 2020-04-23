@@ -1,0 +1,27 @@
+[
+	{   //I'm using replace because the "Rainbow Factory" is already in the base mod, but you should use "add"
+		"op" : "replace", 
+		"path" : "/rainbowfactory",
+		"value" : {
+			"title" : "Rainbow Factory", //Not used, but cool anyway
+			"partOverrides" : {"accessory" : "dahl", "capacitor" : "maliwan"}, //manufacturer index, these will be used as fixed parts
+			//You can overwrite anything in "manufacturers.config", see "uniques.config" for more examples
+			"manufacturerOverwrites" : {
+					"shieldtype" : ["rainbowfactoryshield"], //Overwrite all types of shield, this is also the name of the status-effect, if a manufacturer has multiple types, you must overwrite all of them
+					"shieldtypeindex" : ["tedioreturret"], //Which shield type to use as base
+					"logo" : "/interface/manufacturers/maliwanlogo.png" //Replace the logo in the card
+				},
+			"paletteIndex" : "rainbowfactory", //Name for the color palette in "uniqueshields.weaponcolors"
+			"uniqueEffectName" : "rainbowfactorytype", //Required, is the name of the effect that sets the global unique index, in "types/uniques/rainbowfactorytype.statuseffect"
+			//These overwrite the shield type, in "shieldtypeindex", these are found in "types.config", read there for more info on what everything does
+			"shieldTypeOverwrites" : {
+					"title" :  "Rainbow Factory", //Name displayed
+					"gradeMultiplier" : [0.05,2,1,-0.01],
+					"baseGrade" : [1.25,40,20,1.1],
+					"stats" : {"special":[18]},
+					"redText" :  "Seen more pain than you can know.",
+					"description" : {"description" : "When hit, stores some of the damage received.\n-When depleted the shield makes a ^#FF0000;R^#FF7F00;a^#FFFF00;i^#00FF00;n^#0000FF;b^#4B0082;o^#8F00FF;w^#d4c6a1; Elemental Turret^#ffffff; that deals the stored damage."}
+				}
+		}
+	}
+]

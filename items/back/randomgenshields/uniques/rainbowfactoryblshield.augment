@@ -1,0 +1,62 @@
+{
+  "itemName" : "rainbowfactoryblshield",
+  "price" : 5000,
+  "rarity" : "Essential",
+  "rarityIndex" :  "effervescent", //Used for calculations and colors, (see rarity.config)
+  "tooltipKind" : "randgenblshield",
+  "category" : "eppAugment",
+  //"inventoryIcon" : "shieldaugment.png",
+  "description" : "I generated incorrectly",
+  "shortdescription" : "Common Shield",
+  
+
+  "augment" : {
+    "type" : "back",
+    "name" : "rainbowfactoryblshield",
+    "displayName" : "Rainbow Factory", //Unused
+    "displayIcon" : "/items/augments/back/randomgenshields/baseshieldaugment.png",
+    "effects" : [ ]
+  },
+  
+  "animationParts" : { },
+  "animationCustom" : { },
+  "baseOffset" : [0, 0],
+  
+  "builder" : "/items/buildscripts/buildrandGenshield.lua",
+  "builderConfig" : [{
+    "animationParts" : {
+	  "accessory" : {
+		"path" : "/items/augments/back/randomgenshields/accessory/<variant>.png",
+		"variants" : 9,
+		"paletteSwap" : true
+	  },
+	  "body" : {
+        "path" : "/items/augments/back/randomgenshields/body/<variant>.png",
+        "variants" : 9,
+        "paletteSwap" : true
+      },
+      "battery" : {
+        "path" : "/items/augments/back/randomgenshields/battery/<variant>.png",
+        "variants" : 9,
+        "paletteSwap" : true
+      },
+      "capacitor" : {
+        "path" : "/items/augments/back/randomgenshields/capacitor/<variant>.png",
+        "variants" : 9,
+        "paletteSwap" : true
+      }
+    },
+	"uniqueIndex" : "rainbowfactory", //Used to know if the shield is a unique and also which one
+	"baseOffset" : [0, 0],
+    "shieldParts" : ["accessory","battery", "capacitor", "body"],
+    "palette" : "/items/augments/back/randomgenshields/uniqueshields.weaponcolors",
+    "iconDrawables" : ["accessory","battery", "capacitor", "body"]
+  }],
+
+  "radioMessagesOnPickup" : [ "pickupblshield" ],
+  "learnBlueprintsOnPickup" : [
+    "shieldstatcard"
+  ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

@@ -1,0 +1,13 @@
+{
+  "name" : "rainbowfactoryshield", //Status effect identifier, use it in "shieldTypes"
+  "effectConfig" : {
+	"shieldTypeIndex" : "tedioreturret" //Base type, to use as a base when reading for display
+  },
+  "defaultDuration" : 10,
+  "scripts" : [
+    "rainbowfactoryshield.lua"
+  ],
+  //Animation to use, I use one that already exists, but you can make your own, this does not replace the default blue bar, but It may be draw before or after, use a size of 27 x 5 to be around the shield bar.
+  "animationConfig" : "/stats/effects/randgenblshield/types/tedioreturret/barshield.animation", 
+  "label" : "Turret"
+}
