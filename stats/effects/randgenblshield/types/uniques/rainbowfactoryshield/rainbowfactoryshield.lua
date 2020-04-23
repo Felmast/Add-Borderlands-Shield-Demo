@@ -58,7 +58,7 @@ function initialize()
 	self.fireRate = self.special[4]
 	
 	
-	self.turretProjectile = "turretprojectile"
+	self.turretProjectile = "rainbowfactoryprojectile"
 	self.currCapacity = status.resource("damageAbsorption")
 	self.lastCapacity = self.currCapacity
 	
