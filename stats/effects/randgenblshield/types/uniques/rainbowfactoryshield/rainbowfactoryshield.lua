@@ -42,7 +42,9 @@ function spawnTurret()
 				fireRate = self.fireRate,
 				range = self.range-0.1,
 				speed = 10,
-				damageKinds = {"default","fireplasma","iceplasma","poisonplasma","electricplasma","slagplasma"}
+				damageKinds = {"flamethrower","iceplasma","poisonplasma","electricplasma","slagplasma"},
+				damageEffects = {"burning","frostslow","weakpoison","electrified","slagged"},
+				timeToLive = 10
 			  }
 	world.spawnProjectile(self.turretProjectile, entity.position(), effect.sourceEntity(), {dir*22,15}, false, damageConfig)
 
