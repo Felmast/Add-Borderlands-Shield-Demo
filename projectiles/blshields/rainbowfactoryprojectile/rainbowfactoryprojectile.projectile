@@ -9,7 +9,7 @@
   "windupFrames" : 4,
   //"winddownFrames" : 0,
   "piercing" : true,
-  "timeToLive" : 7,
+  "timeToLive" : 10,
   "bounces" : 1,
   "actionOnReap" : [
     {
